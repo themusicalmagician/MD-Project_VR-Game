@@ -8,12 +8,21 @@ public class RandomButton : MonoBehaviour
     public float colorChangeDuration = 5f;
     public float delayBetweenChanges = 5f;
 
-    private List<GameObject> currentButtons;
+    public static List<GameObject> currentButtons;
 
     private void Start()
     {
         currentButtons = new List<GameObject>();
         StartCoroutine(ChangeButtonColors());
+    }
+
+    public static void changeWhite()
+    {
+        foreach (GameObject button in currentButtons)
+        {
+            button.GetComponent<Renderer>().material.color = Color.white;
+            button.GetComponent<Collider>().enabled = false;
+        }
     }
 
     private IEnumerator ChangeButtonColors()
