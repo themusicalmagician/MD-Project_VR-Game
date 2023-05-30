@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 24794363}
   - component: {fileID: 24794365}
   - component: {fileID: 24794366}
+  - component: {fileID: 24794367}
   m_Layer: 0
   m_Name: Right Hand
   m_TagString: hands
@@ -238,6 +239,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &24794367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24794360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98782ecde6e9914487bef2fdda4808d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 1910263178}
 --- !u!114 &39800390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,7 +265,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &39800395
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1149,7 +1162,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &265922802
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1259,7 +1271,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &306993513
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1369,7 +1380,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &348391967
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1510,7 +1520,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &416392294
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1620,7 +1629,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &439179885
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2405,7 +2413,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &741325331
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2612,7 +2619,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &772636571
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2722,7 +2728,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &918266464
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2832,6 +2837,7 @@ GameObject:
   - component: {fileID: 936693502}
   - component: {fileID: 936693504}
   - component: {fileID: 936693505}
+  - component: {fileID: 936693506}
   m_Layer: 0
   m_Name: Left Hand
   m_TagString: hands
@@ -2934,6 +2940,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &936693506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 936693499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b98782ecde6e9914487bef2fdda4808d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: {fileID: 1910263178}
 --- !u!1 &936723227
 GameObject:
   m_ObjectHideFlags: 0
@@ -3134,7 +3153,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &1008974867
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3278,7 +3296,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &1207680500
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3388,7 +3405,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &1230416910
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3498,7 +3514,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &1283879577
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3608,7 +3623,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &1287144329
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3884,7 +3898,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &1508738766
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3994,7 +4007,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &1545670070
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4201,7 +4213,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &1679495777
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4999,7 +5010,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &1748730073
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5109,7 +5119,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &1771809268
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5219,7 +5228,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &1792762064
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5329,7 +5337,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &1829611136
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5439,7 +5446,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &1842187661
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5549,7 +5555,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &1843677400
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5794,7 +5799,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &1910918321
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5998,7 +6002,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hit: {fileID: 39800395}
-  score: {fileID: 1910263178}
 --- !u!82 &2035689364
 AudioSource:
   m_ObjectHideFlags: 0
