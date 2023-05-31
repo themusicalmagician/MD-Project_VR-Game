@@ -4,15 +4,12 @@ using UnityEngine;
 
 public class YeetItems : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter(Collider collider)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (collider.gameObject.CompareTag("Respawn"))
+        {
+            transform.position = new Vector3(Random.Range(-4, 4), 1.63f, 3.2f);
+            Debug.Log("help");
+        }
     }
 }
