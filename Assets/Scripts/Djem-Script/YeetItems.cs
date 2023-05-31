@@ -8,8 +8,7 @@ public class YeetItems : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("Respawn"))
         {
-            transform.position = new Vector3(Random.Range(-4, 4), 1.63f, 3.2f);
-            Debug.Log("help");
+            transform.localPosition = new Vector3(Random.Range(-15, -10), -0.8f, -39.8f);
         }
     }
 }
