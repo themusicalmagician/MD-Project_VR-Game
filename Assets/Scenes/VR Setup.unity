@@ -5032,7 +5032,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b98782ecde6e9914487bef2fdda4808d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
+  score: {fileID: 1910263178}
 --- !u!54 &96943036131345645
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5045,9 +5045,9 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &96943036131345647
 GameObject:
@@ -10693,7 +10693,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b98782ecde6e9914487bef2fdda4808d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  score: {fileID: 0}
+  score: {fileID: 1910263178}
 --- !u!54 &8363938262336817941
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10706,9 +10706,9 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 0
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 126
   m_CollisionDetection: 0
 --- !u!1 &8363938262336817943
 GameObject:
