@@ -10,5 +10,9 @@ public class YeetItems : MonoBehaviour
         {
             transform.localPosition = new Vector3(Random.Range(-15, -10), -0.8f, -39.8f);
         }
+        if (collider.gameObject.CompareTag("Score"))
+        {
+            transform.localPosition = new Vector3(Random.Range(-15, -10), -0.8f, -39.8f);
+        }
     }
 }
