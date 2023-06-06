@@ -1404,7 +1404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 546138747}
-  m_MoveSpeed: 8
+  m_MoveSpeed: 5
   m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
@@ -5440,6 +5440,7 @@ GameObject:
   - component: {fileID: 2020198549509262385}
   - component: {fileID: 2020198549509262384}
   - component: {fileID: 2020198549509262387}
+  - component: {fileID: 2020198549509262388}
   m_Layer: 0
   m_Name: XR Origin
   m_TagString: Untagged
@@ -5461,6 +5462,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ActionAssets:
   - {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!65 &2020198549509262388
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020198549509262386}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 0.8, z: 0}
 --- !u!1 &2020198550130147268
 GameObject:
   m_ObjectHideFlags: 0
@@ -6785,7 +6799,6 @@ GameObject:
   - component: {fileID: 2020198550958848748}
   - component: {fileID: 2020198550958848751}
   - component: {fileID: 2020198550958848722}
-  - component: {fileID: 2020198550958848752}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6961,20 +6974,6 @@ MonoBehaviour:
     m_SingletonActionBindings: []
     m_Flags: 0
   m_HasMigratedActions: 1
---- !u!136 &2020198550958848752
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2020198550958848745}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2.1801429
-  m_Direction: 1
-  m_Center: {x: 0, y: -0.59007144, z: 0}
 --- !u!33 &2281763014887862453
 MeshFilter:
   m_ObjectHideFlags: 0
