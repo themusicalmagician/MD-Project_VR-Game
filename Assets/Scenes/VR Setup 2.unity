@@ -347,7 +347,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7649e3ddfcb0f6f498ac200a33594a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PointsToGet: 30
+  PointsToGet: 1
+  ButtonRoom: 0
+  YeetRoom: 1
 --- !u!54 &143498821
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1404,7 +1406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreParticle: {fileID: 1327245891}
-  score: {fileID: 0}
+  score: {fileID: 1910263178}
   points: 3
 --- !u!64 &687673923
 MeshCollider:
@@ -1697,7 +1699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreParticle: {fileID: 1966886970}
-  score: {fileID: 0}
+  score: {fileID: 1910263178}
   points: 6
 --- !u!64 &909582028
 MeshCollider:
@@ -1827,7 +1829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreParticle: {fileID: 1589106865}
-  score: {fileID: 0}
+  score: {fileID: 1910263178}
   points: 1
 --- !u!64 &923008075
 MeshCollider:
@@ -3008,7 +3010,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -8186,7 +8188,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -13098,7 +13100,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -18762,7 +18764,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -23965,7 +23967,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ScoreParticle: {fileID: 1395182551}
-  score: {fileID: 0}
+  score: {fileID: 1910263178}
   points: 3
 --- !u!64 &2073769263
 MeshCollider:
@@ -24699,19 +24701,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &465051266029907977
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 465051266029907978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b98782ecde6e9914487bef2fdda4808d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: {fileID: 0}
 --- !u!1 &465051266029907978
 GameObject:
   m_ObjectHideFlags: 0
@@ -24723,7 +24712,6 @@ GameObject:
   - component: {fileID: 954729057629416112}
   - component: {fileID: 465051266029908023}
   - component: {fileID: 465051266029907976}
-  - component: {fileID: 465051266029907977}
   m_Layer: 0
   m_Name: XRControllerRight
   m_TagString: hands
@@ -37684,19 +37672,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &8304344199166312433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8304344199166312434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b98782ecde6e9914487bef2fdda4808d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: {fileID: 0}
 --- !u!1 &8304344199166312434
 GameObject:
   m_ObjectHideFlags: 0
@@ -37708,7 +37683,6 @@ GameObject:
   - component: {fileID: 8679885232818775368}
   - component: {fileID: 8304344199166312447}
   - component: {fileID: 8304344199166312432}
-  - component: {fileID: 8304344199166312433}
   m_Layer: 0
   m_Name: XRControllerLeft
   m_TagString: hands

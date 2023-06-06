@@ -21233,6 +21233,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PointsToGet: 2
+  ButtonRoom: 1
+  YeetRoom: 0
 --- !u!1 &9059876566179682140
 GameObject:
   m_ObjectHideFlags: 0
