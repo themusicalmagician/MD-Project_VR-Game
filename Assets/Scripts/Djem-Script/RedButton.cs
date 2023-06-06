@@ -10,9 +10,15 @@ public class RedButton : MonoBehaviour
     {
         if (collider.gameObject.CompareTag("hands"))
         {
-            if(Points.scoreCount > PointsToGet)
+            if(ScoreRing.scoreCount != PointsToGet)
             {
-                StartCoroutine(Spooky.Jumpscare());
+                Spooky.jumpscare = true;
+                ScoreRing.scoreCount = 0;
+            }
+            if (HandsTrigger.scoreCount != PointsToGet)
+            {
+                Spooky.jumpscare = true;
+                HandsTrigger.scoreCount = 0;    
             }
         }
     }
