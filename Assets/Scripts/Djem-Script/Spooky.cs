@@ -18,6 +18,8 @@ public class Spooky : MonoBehaviour
     public Color newColor;
     public Color oldColor;
 
+    public AudioSource sound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -45,6 +47,7 @@ public class Spooky : MonoBehaviour
     {
         yield return new WaitForSeconds(SpawnShowMonster);
         Monster.SetActive(true);
+        sound.PlayDelayed(0);
         ChangeBloomTint(newColor);
         yield return new WaitForSeconds(Duration);
         Monster.SetActive(false);
