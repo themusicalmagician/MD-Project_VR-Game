@@ -6,28 +6,24 @@ using UnityEngine.Rendering.Universal;
 
 public class Spooky : MonoBehaviour
 {
-    int SpawnShowMonster;
-    float Duration;
-    public GameObject Monster;
-    public int minTimer = 5;
-    public int maxTimer = 60;
+    static float Duration;
+    public static GameObject Monster;
 
     [SerializeField]
-    private Volume volume;
+    private static Volume volume;
 
-    public Color newColor;
-    public Color oldColor;
+    public static Color newColor;
+    public static Color oldColor;
 
-    public AudioSource sound;
+    public static AudioSource sound;
 
     // Start is called before the first frame update
     void Start()
     {
         volume = GetComponent<Volume>();
-        RandomValue();
     }
 
-    public void ChangeBloomTint(Color color)
+    public static void ChangeBloomTint(Color color)
     {
         Bloom bloom;
         if (volume.profile.TryGet(out bloom))
@@ -36,22 +32,14 @@ public class Spooky : MonoBehaviour
         }
     }
 
-    void RandomValue()
+    public static IEnumerator Jumpscare()
     {
-        SpawnShowMonster = Random.Range(minTimer, maxTimer);
         Duration = Random.Range(0.1f, 0.8f);
-        StartCoroutine(Jumpscare());
-    }
-
-    IEnumerator Jumpscare()
-    {
-        yield return new WaitForSeconds(SpawnShowMonster);
         Monster.SetActive(true);
         sound.PlayDelayed(0);
         ChangeBloomTint(newColor);
         yield return new WaitForSeconds(Duration);
         Monster.SetActive(false);
         ChangeBloomTint(oldColor);
-        RandomValue();
     }
 }
