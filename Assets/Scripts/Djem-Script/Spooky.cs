@@ -27,7 +27,6 @@ public class Spooky : MonoBehaviour
 
     private void Update()
     {
-        sound.volume = 4;
         if (jumpscare == true)
         {
             StartCoroutine(Jumpscare());
