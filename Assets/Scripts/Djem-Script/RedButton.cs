@@ -8,11 +8,13 @@ public class RedButton : MonoBehaviour
     public int PointsToGet;
     public bool ButtonRoom;
     public bool YeetRoom;
+    public ParticleSystem Press;
 
     private void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.CompareTag("hands"))
         {
+            Press.Play();
             if(ScoreRing.scoreCount != PointsToGet && YeetRoom == true)
             {
                 Spooky.jumpscare = true;
