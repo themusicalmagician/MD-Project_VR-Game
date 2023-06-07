@@ -6,7 +6,8 @@ using UnityEngine.Rendering.Universal;
 
 public class Spooky : MonoBehaviour
 {
-    float Duration;
+    float Duration1;
+    float Duration2;
     public GameObject Monster;
     public static bool jumpscare;
 
@@ -26,7 +27,8 @@ public class Spooky : MonoBehaviour
 
     private void Update()
     {
-        if(jumpscare == true)
+        sound.volume = 4;
+        if (jumpscare == true)
         {
             StartCoroutine(Jumpscare());
             jumpscare = false;
@@ -44,12 +46,14 @@ public class Spooky : MonoBehaviour
 
     IEnumerator Jumpscare()
     {
+        Duration1 = Random.Range(1f, 10f);
+        Duration2 = Random.Range(0.1f, 0.8f);
+        yield return new WaitForSeconds(Duration1);
         Monster.SetActive(true);
         sound.PlayDelayed(0);
         ChangeBloomTint(newColor);
-        yield return new WaitForSeconds(Duration);
+        yield return new WaitForSeconds(Duration2);
         Monster.SetActive(false);
-        ChangeBloomTint(oldColor);
-        Duration = Random.Range(0.1f, 0.8f);
+        ChangeBloomTint(oldColor);       
     }
 }
