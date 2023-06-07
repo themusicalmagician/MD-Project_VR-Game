@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7649e3ddfcb0f6f498ac200a33594a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PointsToGet: 1
+  PointsToGet: 30
   ButtonRoom: 0
   YeetRoom: 1
 --- !u!54 &143498821

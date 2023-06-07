@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class RedButton : MonoBehaviour
 {
@@ -17,9 +18,20 @@ public class RedButton : MonoBehaviour
                 Spooky.jumpscare = true;
                 ScoreRing.scoreCount = 0;
             }
+            else if(ScoreRing.scoreCount == PointsToGet && YeetRoom == true)
+            {
+                SceneManager.LoadScene("VR Setup");
+                HandsTrigger.scoreCount = 0;
+            }
+
             if (HandsTrigger.scoreCount != PointsToGet && ButtonRoom == true)
             {
                 Spooky.jumpscare = true;
+                HandsTrigger.scoreCount = 0;
+            }
+            else if (HandsTrigger.scoreCount == PointsToGet && ButtonRoom == true)
+            {
+                SceneManager.LoadScene("VR Setup 2");
                 HandsTrigger.scoreCount = 0;
             }
         }
