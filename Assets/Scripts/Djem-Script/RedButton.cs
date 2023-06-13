@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class RedButton : MonoBehaviour
 {
-    public int PointsToGet;
     public bool ButtonRoom;
     public bool YeetRoom;
     public ParticleSystem Press;
@@ -15,29 +14,40 @@ public class RedButton : MonoBehaviour
         if (collider.gameObject.CompareTag("hands"))
         {
             Press.Play();
-            if(ScoreRing.scoreCount != PointsToGet && YeetRoom == true)
+            if(ScoreRing.scoreCount != randomhint.randomNum && YeetRoom == true)
             {
                 Spooky.jumpscare = true;
                 ScoreRing.scoreCount = 0;
             }
-            else if(ScoreRing.scoreCount == PointsToGet && YeetRoom == true)
+            else if(ScoreRing.scoreCount == randomhint.randomNum && YeetRoom == true)
             {
-                SceneManager.LoadScene("VR Setup");
+                StartCoroutine(Scene3());
                 HandsTrigger.scoreCount = 0;
             }
 
-            if (HandsTrigger.scoreCount != PointsToGet && ButtonRoom == true)
+            if (HandsTrigger.scoreCount != randomhint.randomNum && ButtonRoom == true)
             {
                 Spooky.jumpscare = true;
                 HandsTrigger.scoreCount = 0;
             }
-            else if (HandsTrigger.scoreCount == PointsToGet && ButtonRoom == true)
+            else if (HandsTrigger.scoreCount == randomhint.randomNum && ButtonRoom == true)
             {
-                SceneManager.LoadScene("VR Setup 2");
+                StartCoroutine(Scene2());
                 HandsTrigger.scoreCount = 0;
             }
         }
     }
+    IEnumerator Scene2()
+    {
+        yield return new WaitForSeconds (5f);
+        SceneManager.LoadScene("VR Setup 2");
+    }
+    IEnumerator Scene3()
+    {
+        yield return new WaitForSeconds(5f);
+        SceneManager.LoadScene("VR Setup 3");
+    }
+
     private void Update()
     {
         if (YeetRoom == true && ButtonRoom == true || YeetRoom == false && ButtonRoom == false)
