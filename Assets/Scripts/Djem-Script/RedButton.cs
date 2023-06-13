@@ -22,7 +22,6 @@ public class RedButton : MonoBehaviour
             else if(ScoreRing.scoreCount == randomhint.randomNum && YeetRoom == true)
             {
                 StartCoroutine(Scene3());
-                HandsTrigger.scoreCount = 0;
             }
 
             if (HandsTrigger.scoreCount != randomhint.randomNum && ButtonRoom == true)
@@ -33,18 +32,19 @@ public class RedButton : MonoBehaviour
             else if (HandsTrigger.scoreCount == randomhint.randomNum && ButtonRoom == true)
             {
                 StartCoroutine(Scene2());
-                HandsTrigger.scoreCount = 0;
             }
         }
     }
     IEnumerator Scene2()
     {
         yield return new WaitForSeconds (5f);
+        HandsTrigger.scoreCount = 0;
         SceneManager.LoadScene("VR Setup 2");
     }
     IEnumerator Scene3()
     {
         yield return new WaitForSeconds(5f);
+        HandsTrigger.scoreCount = 0;
         SceneManager.LoadScene("VR Setup 3");
     }
 
