@@ -14,7 +14,7 @@ public class randomhint : MonoBehaviour
     {
         int X = (Random.Range(-2, 2));
         int Z = (Random.Range(1, 5));
-        transform.position = new Vector3(X, 1, Z);
+        transform.position = new Vector3(X, 2, Z);
 
         randomNum = Random.Range(20, 50);
         hintNote.text = randomNum.ToString();
