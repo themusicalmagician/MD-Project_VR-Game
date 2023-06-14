@@ -45121,8 +45121,8 @@ GameObject:
   m_Component:
   - component: {fileID: 836275862}
   - component: {fileID: 836275861}
-  - component: {fileID: 836275863}
   - component: {fileID: 836275864}
+  - component: {fileID: 836275865}
   m_Layer: 0
   m_Name: Global Volume
   m_TagString: Untagged
@@ -45162,22 +45162,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &836275863
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 836275860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf7423b3458c07a43b7c15a9f0faa8a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Monster: {fileID: 5425616724698412855}
-  newColor: {r: 1, g: 0, b: 0, a: 0}
-  oldColor: {r: 1, g: 0.9254902, b: 0.5411765, a: 0}
-  sound: {fileID: 836275864}
 --- !u!82 &836275864
 AudioSource:
   m_ObjectHideFlags: 0
@@ -45274,6 +45258,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &836275865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836275860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf7423b3458c07a43b7c15a9f0faa8a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Monster: {fileID: 5425616724698412855}
+  newColor: {r: 1, g: 0, b: 0, a: 0}
+  oldColor: {r: 1, g: 0.9254902, b: 0.5411765, a: 0}
+  sound: {fileID: 836275864}
 --- !u!1 &850936165
 GameObject:
   m_ObjectHideFlags: 0
