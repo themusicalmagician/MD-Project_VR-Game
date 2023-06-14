@@ -18,14 +18,14 @@ public class PortalSpawner : MonoBehaviour
         int rand = Random.Range(0, 2);
         if (rand == 0)
         {
-            Y = -2.4f;
+            Y = -0.5f;
         }
         if (rand == 1)
         {
-            Y = -2;
+            Y = 0;
         }
         yield return new WaitForSeconds(SpawnTime);
-        transform.localPosition = new Vector3(-1, Y, 0);
+        transform.localPosition = new Vector3(-3, Y, 0);
         GameObject instantiatedObject = Instantiate(Portal, transform.position, Quaternion.identity);
         StartCoroutine(PositionPortal());
     }
