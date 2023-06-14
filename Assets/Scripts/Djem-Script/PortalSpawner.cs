@@ -9,7 +9,7 @@ public class PortalSpawner : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(PositionPortal());
+        StartCoroutine(StartDelay());
     }
 
     IEnumerator PositionPortal()
@@ -18,15 +18,20 @@ public class PortalSpawner : MonoBehaviour
         int rand = Random.Range(0, 2);
         if (rand == 0)
         {
-            Y = -0.4f;
+            Y = -2.4f;
         }
         if (rand == 1)
         {
-            Y = 0;
+            Y = -2;
         }
         yield return new WaitForSeconds(SpawnTime);
         transform.localPosition = new Vector3(-1, Y, 0);
         GameObject instantiatedObject = Instantiate(Portal, transform.position, Quaternion.identity);
+        StartCoroutine(PositionPortal());
+    }
+    IEnumerator StartDelay()
+    {
+        yield return new WaitForSeconds(4);
         StartCoroutine(PositionPortal());
     }
 }
