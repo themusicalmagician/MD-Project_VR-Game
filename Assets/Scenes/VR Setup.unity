@@ -25373,7 +25373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 546138747}
-  m_MoveSpeed: 5
+  m_MoveSpeed: 2
   m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
@@ -146609,7 +146609,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.5, y: 1.2, z: 1.5}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &9059876565073608985
 GameObject:
@@ -146758,7 +146758,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.4
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &9059876566179682083
 Transform:
@@ -146803,7 +146803,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7649e3ddfcb0f6f498ac200a33594a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PointsToGet: 30
   ButtonRoom: 1
   YeetRoom: 0
   Press: {fileID: 6723367019119450545}
