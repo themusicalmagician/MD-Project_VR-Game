@@ -37,14 +37,14 @@ public class RedButton : MonoBehaviour
     }
     IEnumerator Scene2()
     {
-        yield return new WaitForSeconds (5f);
         HandsTrigger.scoreCount = 0;
+        yield return new WaitForSeconds (5f);
         SceneManager.LoadScene("VR Setup 2");
     }
     IEnumerator Scene3()
     {
-        yield return new WaitForSeconds(5f);
         HandsTrigger.scoreCount = 0;
+        yield return new WaitForSeconds(5f);
         SceneManager.LoadScene("VR Setup 3");
     }
 
