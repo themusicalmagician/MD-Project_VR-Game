@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveF : MonoBehaviour
+public class SpookyMovement : MonoBehaviour
 {
-    public static float speed = 3f;
+    float speed = 3f;
 
     void Update()
     {

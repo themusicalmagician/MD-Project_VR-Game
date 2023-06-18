@@ -8,6 +8,9 @@ TagManager:
   - hands
   - Score
   - Yeethings
+  - Mhands
+  - Spooky
+  - Door
   layers:
   - Default
   - TransparentFX

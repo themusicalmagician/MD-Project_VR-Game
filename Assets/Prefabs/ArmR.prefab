@@ -973,6 +973,7 @@ GameObject:
   m_Component:
   - component: {fileID: 631196467113044463}
   - component: {fileID: 450904049093473736}
+  - component: {fileID: 5747053321377562337}
   m_Layer: 0
   m_Name: ArmR
   m_TagString: Untagged
@@ -1014,6 +1015,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   D: {x: 1, y: 0, z: 0}
+--- !u!114 &5747053321377562337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 631196467113044456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2359003491ab3f489a63ca3d78fce9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Timer: 10
 --- !u!1 &631196468303446064
 GameObject:
   m_ObjectHideFlags: 0
@@ -13471,7 +13485,7 @@ GameObject:
   - component: {fileID: 7377032175734037356}
   m_Layer: 0
   m_Name: Collider
-  m_TagString: Untagged
+  m_TagString: Mhands
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13502,7 +13516,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 8.86, y: 0.13, z: 0.07}
+  m_Size: {x: 8.86, y: 0.13, z: 0.01}
   m_Center: {x: 4.47, y: 0, z: -0.04}
 --- !u!1 &7182860393013183523
 GameObject:
