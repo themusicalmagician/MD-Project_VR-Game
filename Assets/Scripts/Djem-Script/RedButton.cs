@@ -8,13 +8,15 @@ public class RedButton : MonoBehaviour
     public bool ButtonRoom;
     public bool YeetRoom;
     public ParticleSystem Press;
+    public AudioSource sound;
 
     private void OnTriggerEnter(Collider collider)
     {
         if (collider.gameObject.CompareTag("hands"))
         {
             Press.Play();
-            if(ScoreRing.scoreCount != randomhint.randomNum && YeetRoom == true)
+            sound.PlayDelayed(0);
+            if (ScoreRing.scoreCount != randomhint.randomNum && YeetRoom == true)
             {
                 Spooky.jumpscare = true;
                 ScoreRing.scoreCount = 0;
