@@ -13,7 +13,7 @@ public class randomhint : MonoBehaviour
     public void Start()
     {
         int X = (Random.Range(-2, 2));
-        int Z = (Random.Range(1, 5));
+        int Z = (Random.Range(1, 2));
         transform.position = new Vector3(X, 2, Z);
 
         randomNum = Random.Range(5, 40);
